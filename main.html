@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhole Steel Welding & Fabricating | Premium Sheds, Domes & Custom Iron Works</title>
+    
+    <!-- Resource Hints for Faster Resource Negotiation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configurations -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        cream: {
+                            50: '#FDFCF7',   // Ultra soft cream
+                            100: '#FAF8F2',  // Soft linen ivory
+                            200: '#F3EDE2',  // Warm cream
+                            300: '#E8DCCB',  // Rich alabaster shadow
+                            400: '#D9C5AD',  // Deep champagne
+                        },
+                        bronze: {
+                            50: '#F9F6F0',
+                            100: '#F0E6D2',
+                            500: '#C2935A',  // Rich glowing gold/brass
+                            600: '#A3743F',  // Deep welding heat amber
+                            700: '#85592B',  // Dark iron rust bronze
+                            800: '#5C3C19',  // Rich volcanic carbon
+                            900: '#2E1E0C',  // Darkest iron black
+                        },
+                        slate: {
+                            900: '#171614',  // Forged carbon slate
+                        }
+                    },
+                    boxShadow: {
+                        'premium': '0 20px 40px -15px rgba(163, 116, 63, 0.12)',
+                        'hover': '0 30px 60px -10px rgba(163, 116, 63, 0.22)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(163, 116, 63, 0.4);
+            color: transparent;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Active nav-link state styling */
+        .active-tab {
+            color: #A3743F !important;
+            border-color: #A3743F !important;
+            background-color: rgba(240, 230, 210, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-cream-50 text-slate-900 font-sans selection:bg-bronze-100 selection:text-bronze-800 overflow-x-hidden">
+
+    <!-- Top Trust Bar -->
+    <div class="bg-bronze-900 text-cream-100 text-[11px] sm:text-xs py-2.5 px-4 text-center tracking-widest uppercase font-semibold flex items-center justify-center flex-wrap gap-2">
+        <svg class="w-4 h-4 text-bronze-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+        </svg>
+        <span class="tracking-wide">Bharat Sarkar MSME Certified Industry | Tata, Apollo & Jindal Iron Specialists</span>
+        <span class="hidden md:inline text-bronze-400 font-normal">|</span>
+        <span class="text-bronze-300">Prakash Nagar, Nunihai, Agra-6</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-cream-100/90 custom-blur border-b border-cream-200 transition-all duration-300 shadow-sm" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Slogan -->
+            <a href="#home" class="flex items-center space-x-3 group" onclick="switchPage('main-fabrication')">
+                <img src="/logo.png" alt="logo" width="50" height="4" onerror="this.style.display='none'">
+                <div>
+                    <div class="flex items-baseline space-x-1">
+                        <span class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-bronze-900">Bhole Steel</span>
+                        <span class="text-[10px] bg-bronze-600 text-cream-50 px-1.5 py-0.2 rounded font-bold uppercase tracking-wider">MSME</span>
+                    </div>
+                    <p class="text-[9px] uppercase tracking-[0.1em] text-bronze-600 font-medium">Welding & Fabricating</p>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex space-x-6 items-center font-semibold text-xs uppercase tracking-wider text-stone-700">
+                <button onclick="switchPage('main-fabrication')" class="nav-link py-2 border-b-2 border-transparent hover:text-bronze-600 hover:border-bronze-300 transition-all" id="link-main-fabrication">
+                    Tin Sheds & Domes
+                </button>
+                <button onclick="switchPage('structural-page')" class="nav-link py-2 border-b-2 border-transparent hover:text-bronze-600 hover:border-bronze-300 transition-all" id="link-structural-page">
+                    Heavy Structures
+                </button>
+                <button onclick="switchPage('architectural-page')" class="nav-link py-2 border-b-2 border-transparent hover:text-bronze-600 hover:border-bronze-300 transition-all" id="link-architectural-page">
+                    Gates & Grills
+                </button>
+                <button onclick="switchPage('laser-page')" class="nav-link py-2 border-b-2 border-transparent hover:text-bronze-600 hover:border-bronze-300 transition-all" id="link-laser-page">
+                    Laser CNC Sheets
+                </button>
+                <span class="text-cream-300">|</span>
+                <a href="#trust" class="hover:text-bronze-600 transition-colors py-2">Our Standards</a>
+                <a href="#portfolio" class="hover:text-bronze-600 transition-colors py-2">Photo Gallery</a>
+                <a href="#reviews" class="hover:text-bronze-600 transition-colors py-2">Reviews</a>
+                <a href="#contact" class="hover:text-bronze-600 transition-colors py-2">Find Us</a>
+            </nav>
+
+            <!-- CTA Call Button -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="tel:+919457201485" class="bg-bronze-800 hover:bg-bronze-700 text-cream-50 px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-1.5">
+                    <svg class="w-4 h-4 text-bronze-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span>CALL: 9457201485</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="lg:hidden text-stone-800 focus:outline-none p-2 rounded-lg hover:bg-cream-200" id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg id="menu-icon-svg" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h12M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div class="hidden lg:hidden bg-cream-100 border-t border-cream-200 px-4 py-6 space-y-4" id="mobile-menu">
+            <div class="grid grid-cols-2 gap-2 pb-4 border-b border-cream-200">
+                <button onclick="switchPage('main-fabrication'); toggleMobileMenu()" class="text-left p-3 rounded-xl bg-cream-200/80 font-bold text-xs text-bronze-800 uppercase tracking-wider">Tin Sheds & Doms</button>
+                <button onclick="switchPage('structural-page'); toggleMobileMenu()" class="text-left p-3 rounded-xl bg-cream-200/80 font-bold text-xs text-bronze-800 uppercase tracking-wider">Heavy Structures</button>
+                <button onclick="switchPage('architectural-page'); toggleMobileMenu()" class="text-left p-3 rounded-xl bg-cream-200/80 font-bold text-xs text-bronze-800 uppercase tracking-wider">Gates & Grills</button>
+                <button onclick="switchPage('laser-page'); toggleMobileMenu()" class="text-left p-3 rounded-xl bg-cream-200/80 font-bold text-xs text-bronze-800 uppercase tracking-wider">Laser CNC Sheets</button>
+            </div>
+            <a href="#trust" class="block font-semibold text-stone-700 hover:text-bronze-600" onclick="toggleMobileMenu()">Quality & Trust (भरोसा)</a>
+            <a href="#portfolio" class="block font-semibold text-stone-700 hover:text-bronze-600" onclick="toggleMobileMenu()">Our Work Gallery (तस्वीरें)</a>
+            <a href="#reviews" class="block font-semibold text-stone-700 hover:text-bronze-600" onclick="toggleMobileMenu()">Client Reviews</a>
+            <a href="#contact" class="block font-semibold text-stone-700 hover:text-bronze-600" onclick="toggleMobileMenu()">Find Shop Map</a>
+            
+            <div class="pt-4">
+                <a href="tel:+919457201485" class="flex items-center justify-center w-full text-center bg-bronze-800 text-cream-50 py-4 rounded-xl text-sm font-bold uppercase tracking-wider" onclick="toggleMobileMenu()">
+                    <svg class="w-5 h-5 mr-2 text-bronze-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span>CALL US NOW: 9457201485</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Presentation Frame -->
+    <section class="relative bg-cream-100 py-12 lg:py-20 border-b border-cream-200 overflow-hidden">
+        <div class="absolute inset-0 opacity-5 pointer-events-none">
+            <!-- Grid decorative background representing layout grids -->
+            <div class="w-full h-full bg-[radial-gradient(#A3743F_1.5px,transparent_1.5px)] [background-size:20px_20px]"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-cream-200 border border-bronze-300/60 px-3.5 py-1.5 rounded-full text-bronze-800 text-[11px] font-bold uppercase tracking-widest">
+                        <span class="w-2.5 h-2.5 rounded-full bg-bronze-600 animate-pulse"></span>
+                        <span>100% Guaranteed Heavy Welding Work</span>
+                    </div>
+                    
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-stone-900 leading-tight">
+                        मजबूती और खूबसूरती का वादा। <br>
+                        <span class="text-bronze-600 font-serif italic text-2xl sm:text-3xl lg:text-4xl font-normal block mt-2">
+                            Carefully crafted from high quality metal to offer both beauty and strength.
+                        </span>
+                    </h2>
+                    
+                    <p class="text-stone-700 text-sm sm:text-base leading-relaxed max-w-xl">
+                        At <span class="font-bold text-bronze-800">Bhole Steel Welding and Fabricating</span>, we turn raw iron and steel into monumental assets. Whether you need a massive heavy industrial structural shed, elegant protective dome systems, security main gates, or high-security designer grills, our expert fabricators build everything with lifetime strength. 
+                    </p>
+
+                    <div class="bg-amber-50 border-l-4 border-bronze-600 p-3 rounded-r-lg max-w-xl">
+                        <p class="text-xs font-bold text-bronze-900">
+                            लोहा जो कभी धोखा ना दे! (Steel Built for Generations)
+                        </p>
+                        <p class="text-[11px] text-stone-600 mt-0.5">
+                            We use only standard-gauge steel plates, channels, and square pipes from trusted Indian companies (Tata Steel, Jindal, Sail).
+                        </p>
+                    </div>
+                    
+                    <!-- Call Actions -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="tel:+919457201485" class="bg-bronze-800 hover:bg-bronze-700 text-cream-50 text-center px-6 py-4 rounded-xl font-bold tracking-wider text-xs uppercase transition-all shadow-md hover:shadow-xl hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+                            <svg class="w-5 h-5 text-bronze-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>बात करें (Call Direct): 9457201485</span>
+                        </a>
+                        <a href="#contact" class="bg-cream-200/90 hover:bg-cream-300 text-stone-800 text-center border border-bronze-300 px-6 py-4 rounded-xl font-bold tracking-wider text-xs uppercase transition-all hover:shadow-md flex items-center justify-center space-x-2">
+                            <svg class="w-5 h-5 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>दुकान पर आएं (Our Address)</span>
+                        </a>
+                    </div>
+
+                    <!-- Credential badges in India Style -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-cream-300/80 max-w-lg">
+                        <div>
+                            <p class="text-xl sm:text-2xl font-serif font-bold text-bronze-700">18+ Years</p>
+                            <p class="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Agra Legacy (भरोसा)</p>
+                        </div>
+                        <div>
+                            <p class="text-xl sm:text-2xl font-serif font-bold text-bronze-700">100% Pure</p>
+                            <p class="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Tata/Jindal Steel</p>
+                        </div>
+                        <div>
+                            <p class="text-xl sm:text-2xl font-serif font-bold text-bronze-700">MSME</p>
+                            <p class="text-[9px] uppercase tracking-wider text-stone-500 font-bold">Govt Recognized</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Content: Visual Presentation Frame -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Background luxury glowing element representing welding spark aura -->
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-bronze-400 to-amber-200 rounded-3xl blur-2xl opacity-30 -z-10"></div>
+                        
+                        <!-- Main Presentation Frame -->
+                        <div class="bg-cream-100 border border-bronze-300/60 p-3 sm:p-4 rounded-3xl shadow-premium">
+                            <div class="relative rounded-2xl overflow-hidden shadow-inner h-[280px] sm:h-[360px]">
+                                <img id="hero-dynamic-image" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=60&w=800" 
+                                     alt="Custom Fabrication and Metal Arc Welding" class="w-full h-full object-cover transition-all duration-700 transform hover:scale-105"
+                                     onerror="this.src='https://placehold.co/800x600/2E1E0C/F0E6D2?text=Bhole+Steel+Fabricating'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-transparent to-transparent opacity-85"></div>
+                                <div class="absolute bottom-5 left-5 right-5 text-cream-100">
+                                    <span id="hero-dynamic-badge" class="bg-bronze-600 text-[9px] uppercase tracking-widest px-2.5 py-1 rounded font-bold mb-2 inline-block">Agra's Trusted Welders</span>
+                                    <h3 id="hero-dynamic-title" class="font-serif text-lg sm:text-xl font-bold">Heavy-Duty Arc & Gas Welding</h3>
+                                    <p id="hero-dynamic-desc" class="text-[11px] text-cream-300 mt-1">Industrial-strength finishing for ultimate stability and structural support.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Floating Card -->
+                        <div class="absolute -bottom-6 -left-4 bg-cream-50 border border-bronze-300/50 p-4 rounded-xl shadow-lg flex items-center space-x-3 max-w-[280px] transition-transform hover:-translate-y-1">
+                            <div class="w-10 h-10 rounded-lg bg-bronze-100 flex items-center justify-center text-bronze-800 flex-shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-900 text-xs">Certified MSME Unit</h4>
+                                <p class="text-[10px] text-stone-500">Government of India Registered </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN INTERACTIVE PAGES TABS SYSTEM -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="services-tabs-container">
+        
+        <!-- Tab Buttons: Clean Pill Design -->
+        <div class="flex flex-col items-center mb-12">
+            <span class="text-xs uppercase font-extrabold text-bronze-600 tracking-[0.25em] mb-2">Our Fabrication Offerings</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-center font-bold text-stone-900">Explore Our Industrial Portfolios</h2>
+            <p class="text-stone-500 text-xs sm:text-sm mt-2 text-center max-w-md">Select a category to browse details, custom steel choices, and specialized works.</p>
+            
+            <div class="mt-8 bg-cream-200/50 p-2 rounded-2xl flex flex-wrap justify-center gap-1.5 max-w-4xl border border-cream-300/60 shadow-inner">
+                <button onclick="switchPage('main-fabrication')" id="btn-main-fabrication" class="tab-btn px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    <span>Tin Sheds & Domes</span>
+                </button>
+                <button onclick="switchPage('structural-page')" id="btn-structural-page" class="tab-btn px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <span>Heavy Structures</span>
+                </button>
+                <button onclick="switchPage('architectural-page')" id="btn-architectural-page" class="tab-btn px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    <span>Gates & Grills</span>
+                </button>
+                <button onclick="switchPage('laser-page')" id="btn-laser-page" class="tab-btn px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <span>Laser CNC Sheets</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- DYNAMIC PAGE 1: TIN SHEDS & DOMS (Default Active) -->
+        <section id="main-fabrication" class="page-view block transition-opacity duration-300">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-block bg-bronze-100 text-bronze-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Tin Shed & Dome Specialties
+                    </div>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-extrabold text-stone-900">Custom Iron Sheds & Architectural Doms</h3>
+                    <p class="text-bronze-600 font-serif italic text-sm mt-1">Durable roofs meticulously engineered for weather protection & visual distinction.</p>
+                    <p class="text-stone-600 leading-relaxed text-xs sm:text-sm">
+                        Our specialty lies in designing and erecting high-grade **Iron Sheds (Tin / Fiber Sheets)** and beautiful **Steel Domes (Dom)**. Whether for a large shoe factory warehouse in Nunihai, commercial parking systems, or stylish house terraces in Agra, we promise complete storm, heat, and leakage protection. We calculate every purlin, column span, and sheet overlap with care.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Waterproof Industrial Tin Sheds (टीन शेड)</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Perfect slope design with proper J-bolts, leak-proof washers, and rust-resistant paint.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Exquisite Steel & Iron Domes (गुंबद / Dom)</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Stunning architectural circular and semi-circular curved frames tailored to specifications.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Polycarbonate & Fiber Glass Sheet Roofing</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Allows natural sunlight to pass through while keeping rain and intense summer heat outside.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl overflow-hidden shadow-premium group border border-cream-200">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=60&w=500" alt="Industrial Metal Tin Shed" class="h-44 sm:h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-3 bg-cream-100 text-center">
+                            <h5 class="font-bold text-[11px] uppercase text-bronze-800 tracking-wider">Industrial Tin Sheds</h5>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-premium group border border-cream-200 mt-4">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=60&w=500" alt="Bespoke Metal Curved Dome" class="h-44 sm:h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-3 bg-cream-100 text-center">
+                            <h5 class="font-bold text-[11px] uppercase text-bronze-800 tracking-wider">Architectural Steel Domes</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DYNAMIC PAGE 2: HEAVY INDUSTRIAL STRUCTURES -->
+        <section id="structural-page" class="page-view hidden transition-opacity duration-300">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl overflow-hidden shadow-premium group border border-cream-200 mt-4">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=60&w=500" alt="Heavy Metal Steel Frame Work" class="h-44 sm:h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-3 bg-cream-100 text-center">
+                            <h5 class="font-bold text-[11px] uppercase text-bronze-800 tracking-wider">I-Beam Structural Framing</h5>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-premium group border border-cream-200">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=60&w=500" alt="Heavy Column Pillars Factory" class="h-44 sm:h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-3 bg-cream-100 text-center">
+                            <h5 class="font-bold text-[11px] uppercase text-bronze-800 tracking-wider">Heavy-Duty Pillars & Columns</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 space-y-6">
+                    <div class="inline-block bg-bronze-100 text-bronze-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Structural Fabrication
+                    </div>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-extrabold text-stone-900">Heavy Carbon Steel Frameworks</h3>
+                    <p class="text-bronze-600 font-serif italic text-sm mt-1">Engineered support pillars and trusses built to carry mega-ton loads safely.</p>
+                    <p class="text-stone-600 leading-relaxed text-xs sm:text-sm">
+                        For factories, production units, cold storage facilities, and residential multi-story complexes, Bhole Steel designs and manufactures heavy structural frameworks. We specialize in precise alignment of **I-Beams, H-Beams, MS Channels, and Structural Angle Trusses** to support high loading limits without buckling.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Factory Truss & Mezzanine Floors</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Maximize floor space vertically with ultra-strong, rigid steel mezzanine structures.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Agra's Strict Local Load Safety Standards</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Every single structural welding point undergoes double visual checks for flawless joint integrity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DYNAMIC PAGE 3: GATES & GRILLS -->
+        <section id="architectural-page" class="page-view hidden transition-opacity duration-300">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-block bg-bronze-100 text-bronze-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Home Security & Beauty
+                    </div>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-extrabold text-stone-900">Beautiful Safety Gates & Iron Grills</h3>
+                    <p class="text-bronze-600 font-serif italic text-sm mt-1">Keep your family secure with heavily welded premium steel security gates.</p>
+                    <p class="text-stone-600 leading-relaxed text-xs sm:text-sm">
+                        True to our motto, we create gates and grills that are *"carefully crafted from high quality metal to offer both beauty and strength."* Get heavy main gates with intricate antique patterns, elegant balcony grills, reliable window guards, and luxury staircase railings. We apply double coats of premium anti-rust zinc-chromate primer.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Traditional & Modern Entrance Gates (लोहे के गेट)</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Double-door security gates, heavy sliding gates, and smart automated motorized metal gates.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Super Solid Safety Grills (लोहे की ग्रिल)</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Forged from thick square solid bars that are extremely difficult for burglars to cut or bend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl overflow-hidden shadow-premium group border border-cream-200">
+                        <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=60&w=500" alt="Iron Gate Safety" class="h-44 sm:h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-3 bg-cream-100 text-center">
+                            <h5 class="font-bold text-[11px] uppercase text-bronze-800 tracking-wider">Premium Entrance Gates</h5>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-premium group border border-cream-200 mt-4">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=60&w=500" alt="Iron Grills Welding" class="h-44 sm:h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-3 bg-cream-100 text-center">
+                            <h5 class="font-bold text-[11px] uppercase text-bronze-800 tracking-wider">Solid Security Grills</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DYNAMIC PAGE 4: CNC LASER CUT METAL SHEETS -->
+        <section id="laser-page" class="page-view hidden transition-opacity duration-300">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl overflow-hidden shadow-premium group border border-cream-200 mt-4">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=60&w=500" alt="Laser Cutting CNC Metal" class="h-44 sm:h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-3 bg-cream-100 text-center">
+                            <h5 class="font-bold text-[11px] uppercase text-bronze-800 tracking-wider">CNC Laser Machine Cutting</h5>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-premium group border border-cream-200">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=60&w=500" alt="Designer CNC Gate Panels" class="h-44 sm:h-52 w-full object-cover transition duration-500 group-hover:scale-105">
+                        <div class="p-3 bg-cream-100 text-center">
+                            <h5 class="font-bold text-[11px] uppercase text-bronze-800 tracking-wider">Designer Main Gate Panels</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 space-y-6">
+                    <div class="inline-block bg-bronze-100 text-bronze-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        High-Tech Metal Artistry
+                    </div>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-extrabold text-stone-900">Modern CNC Laser-Cut Steel Sheets</h3>
+                    <p class="text-bronze-600 font-serif italic text-sm mt-1">Stunning geometric design panels for modern royal elevations.</p>
+                    <p class="text-stone-600 leading-relaxed text-xs sm:text-sm">
+                        Experience the perfect blend of digital technology and heavy welding. We offer **custom CNC laser-cut metal panels (Jali design)** for ultra-modern residential facades, front gate backdrops, boundary wall dividers, and beautiful interior mandir structures. Get exactly what you design on paper!
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Premium Steel Jali Panels (जली कटिंग)</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Perfect curves and burr-free edges cut from heavy 10-gauge to 16-gauge plates.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-bronze-100 flex items-center justify-center text-bronze-700 mt-1 flex-shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-stone-800 text-xs sm:text-sm">Anti-Rust High-End Powder Coating</h4>
+                                <p class="text-[11px] sm:text-xs text-stone-500">Coated thoroughly in gorgeous shades like royal gold, deep champagne, charcoal black, or rustic brass.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Trust & Standard (bilingual simple elements) Section -->
+    <section id="trust" class="bg-stone-900 text-cream-100 py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="w-full h-full bg-[radial-gradient(#C2935A_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase font-extrabold text-bronze-500 tracking-[0.2em]">Our 4 Pillars of Unmatched Trust</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">भरोसा जो कभी टूटेगा नहीं!</h2>
+                <p class="text-stone-400 text-xs sm:text-sm mt-3">Why local factories, structural builders, and sweet home owners in Agra choose Bhole Steel over anyone else.</p>
+            </div>
+
+            <!-- 4 Column Grid of Trust Highlights -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Highlight 1: Government MSME Certified -->
+                <div class="bg-stone-900 border border-stone-800 p-6 rounded-2xl hover:border-bronze-600/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-bronze-900/80 text-bronze-500 flex items-center justify-center mb-4 border border-bronze-800">
+                        <span class="font-serif font-bold text-lg">01</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-cream-50">Sarkari MSME Unit</h3>
+                    <p class="text-xs text-bronze-500 font-semibold mt-1">GOVERNMENT REGISTERED</p>
+                    <p class="text-[11px] sm:text-xs text-stone-400 mt-2 leading-relaxed">
+                        Registered proudly under India's Ministry of MSME. We follow strict local building codes.
+                    </p>
+                </div>
+
+                <!-- Highlight 2: Agra Nunihai Legacy -->
+                <div class="bg-stone-900 border border-stone-800 p-6 rounded-2xl hover:border-bronze-600/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-bronze-900/80 text-bronze-500 flex items-center justify-center mb-4 border border-bronze-800">
+                        <span class="font-serif font-bold text-lg">02</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-cream-50">Local Nunihai Shop</h3>
+                    <p class="text-xs text-bronze-500 font-semibold mt-1">NUNIHAI, AGRA AREA TRUST</p>
+                    <p class="text-[11px] sm:text-xs text-stone-400 mt-2 leading-relaxed">
+                        Operating from Prakash Nagar, Nunihai (Agra-6). We understand local water logging and wind issues, adjusting steel coatings and paint formulas accordingly.
+                    </p>
+                </div>
+
+                <!-- Highlight 3: Standard Brand Materials -->
+                <div class="bg-stone-900 border border-stone-800 p-6 rounded-2xl hover:border-bronze-600/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-bronze-900/80 text-bronze-500 flex items-center justify-center mb-4 border border-bronze-800">
+                        <span class="font-serif font-bold text-lg">03</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-cream-50">No Cheap Scrap Iron</h3>
+                    <p class="text-xs text-bronze-500 font-semibold mt-1">100% BRANDED STEEL</p>
+                    <p class="text-[11px] sm:text-xs text-stone-400 mt-2 leading-relaxed">
+                        Strictly NO unbranded scrap plates. We procure standard heavy structural channels directly from Tata Steel, Jindal, and SAIL authorized dealers.
+                    </p>
+                </div>
+
+                <!-- Highlight 4: Absolute Precision Guarantee -->
+                <div class="bg-stone-900 border border-stone-800 p-6 rounded-2xl hover:border-bronze-600/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-bronze-900/80 text-bronze-500 flex items-center justify-center mb-4 border border-bronze-800">
+                        <span class="font-serif font-bold text-lg">04</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-cream-50">Free Site Inspection</h3>
+                    <p class="text-xs text-bronze-500 font-semibold mt-1">NAAP AUR NAKSHA ESTIMATION</p>
+                    <p class="text-[11px] sm:text-xs text-stone-400 mt-2 leading-relaxed">
+                        Our master fabricator will visit your site to perform direct measurements and provide a robust estimation cost. Clear pricing beforehand, zero surprise additions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Portfolio Section with Custom Lightbox -->
+    <section id="portfolio" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex flex-col items-center mb-12">
+            <span class="text-xs uppercase font-extrabold text-bronze-600 tracking-[0.25em] mb-2">Our Actual Site Work Photographs</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-center font-bold text-stone-900">किए गए कार्यों की तस्वीरें</h2>
+            <p class="text-stone-500 text-xs sm:text-sm mt-2 text-center max-w-xl">
+                Click any photograph below to see the enlarged full-screen preview. Examine the flawless weld seams, rigid alignment, and high-gloss protective paint.
+            </p>
+        </div>
+
+        <!-- Portfolio Image Cards Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project Card 1 -->
+            <div class="bg-cream-100 border border-cream-300 rounded-3xl overflow-hidden shadow-premium group">
+                <div class="relative overflow-hidden h-64 cursor-pointer" onclick="openLightbox(0)">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=60&w=800" 
+                         alt="Heavy Industrial Tin Shed Project Agra" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                         id="gallery-img-0">
+                    <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="bg-cream-100 text-bronze-800 text-xs font-bold px-4 py-2 rounded-xl shadow-md uppercase tracking-wider flex items-center gap-1">
+                            <svg class="w-4 h-4 text-bronze-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                            <span>बड़ा करें (Enlarge)</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5 text-center">
+                    <h4 class="font-serif font-bold text-stone-900 text-base" id="gallery-title-0">Heavy Industrial Tin Shed</h4>
+                    <p class="text-[11px] text-stone-500 mt-1 uppercase font-bold tracking-widest">Nunihai Industrial Zone</p>
+                    <p class="text-xs text-stone-600 mt-2 leading-relaxed">Large-span roof structural layout with strong wind-bracing systems.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-cream-100 border border-cream-300 rounded-3xl overflow-hidden shadow-premium group">
+                <div class="relative overflow-hidden h-64 cursor-pointer" onclick="openLightbox(1)">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=60&w=800" 
+                         alt="Bespoke Iron Dome Structure" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                         id="gallery-img-1">
+                    <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="bg-cream-100 text-bronze-800 text-xs font-bold px-4 py-2 rounded-xl shadow-md uppercase tracking-wider flex items-center gap-1">
+                            <svg class="w-4 h-4 text-bronze-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                            <span>बड़ा करें (Enlarge)</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5 text-center">
+                    <h4 class="font-serif font-bold text-stone-900 text-base" id="gallery-title-1">Architectural Circular Dom</h4>
+                    <p class="text-[11px] text-stone-500 mt-1 uppercase font-bold tracking-widest">Dayalbagh Residential</p>
+                    <p class="text-xs text-stone-600 mt-2 leading-relaxed">Exquisitely curved MS profile pipes welded cleanly to prevent any rain stagnation.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="bg-cream-100 border border-cream-300 rounded-3xl overflow-hidden shadow-premium group">
+                <div class="relative overflow-hidden h-64 cursor-pointer" onclick="openLightbox(2)">
+                    <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=60&w=800" 
+                         alt="Modern CNC Laser Cut Boundary Gate" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                         id="gallery-img-2">
+                    <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="bg-cream-100 text-bronze-800 text-xs font-bold px-4 py-2 rounded-xl shadow-md uppercase tracking-wider flex items-center gap-1">
+                            <svg class="w-4 h-4 text-bronze-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                            <span>बड़ा करें (Enlarge)</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5 text-center">
+                    <h4 class="font-serif font-bold text-stone-900 text-base" id="gallery-title-2">Royal Laser Jali Boundary Gate</h4>
+                    <p class="text-[11px] text-stone-500 mt-1 uppercase font-bold tracking-widest">Sikandra Bungalow</p>
+                    <p class="text-xs text-stone-600 mt-2 leading-relaxed">Features high-precision CNC laser sheet art integrated with sturdy structural bars.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="bg-cream-100 border border-cream-300 rounded-3xl overflow-hidden shadow-premium group">
+                <div class="relative overflow-hidden h-64 cursor-pointer" onclick="openLightbox(3)">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=60&w=800" 
+                         alt="Heavy-Duty Factory Platform Truss" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                         id="gallery-img-3">
+                    <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="bg-cream-100 text-bronze-800 text-xs font-bold px-4 py-2 rounded-xl shadow-md uppercase tracking-wider flex items-center gap-1">
+                            <svg class="w-4 h-4 text-bronze-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                            <span>बड़ा करें (Enlarge)</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5 text-center">
+                    <h4 class="font-serif font-bold text-stone-900 text-base" id="gallery-title-3">Heavy Factory Platform Truss</h4>
+                    <p class="text-[11px] text-stone-500 mt-1 uppercase font-bold tracking-widest">Shastripuram Warehouse</p>
+                    <p class="text-xs text-stone-600 mt-2 leading-relaxed">Built from heavy MS Channels to carry continuous factory generator machine loads.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="bg-cream-100 border border-cream-300 rounded-3xl overflow-hidden shadow-premium group">
+                <div class="relative overflow-hidden h-64 cursor-pointer" onclick="openLightbox(4)">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=60&w=800" 
+                         alt="High Security Window Grills" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                         id="gallery-img-4">
+                    <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="bg-cream-100 text-bronze-800 text-xs font-bold px-4 py-2 rounded-xl shadow-md uppercase tracking-wider flex items-center gap-1">
+                            <svg class="w-4 h-4 text-bronze-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                            <span>बड़ा करें (Enlarge)</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5 text-center">
+                    <h4 class="font-serif font-bold text-stone-900 text-base" id="gallery-title-4">Reinforced Window Security Grills</h4>
+                    <p class="text-[11px] text-stone-500 mt-1 uppercase font-bold tracking-widest">Kamla Nagar Residential</p>
+                    <p class="text-xs text-stone-600 mt-2 leading-relaxed">Carefully welded intersecting solid iron rods offering unparalleled safety and beauty.</p>
+                </div>
+            </div>
+
+            <!-- Project Card 6 -->
+            <div class="bg-cream-100 border border-cream-300 rounded-3xl overflow-hidden shadow-premium group">
+                <div class="relative overflow-hidden h-64 cursor-pointer" onclick="openLightbox(5)">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=60&w=800" 
+                         alt="Agra Shopping Complex Parking Shed" class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                         id="gallery-img-5">
+                    <div class="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="bg-cream-100 text-bronze-800 text-xs font-bold px-4 py-2 rounded-xl shadow-md uppercase tracking-wider flex items-center gap-1">
+                            <svg class="w-4 h-4 text-bronze-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                            <span>बड़ा करें (Enlarge)</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-5 text-center">
+                    <h4 class="font-serif font-bold text-stone-900 text-base" id="gallery-title-5">Curved Cantilever Parking Shed</h4>
+                    <p class="text-[11px] text-stone-500 mt-1 uppercase font-bold tracking-widest">Sanjay Place Complex</p>
+                    <p class="text-xs text-stone-600 mt-2 leading-relaxed">Designed without obstructing pillars for absolute ease of parking vehicles under deep shade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOM PREMIUM LIGHTBOX MODAL WITH CENTERED NAVIGATION AND ACTION CONTROLS -->
+    <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-stone-950/95 flex flex-col justify-between items-center py-6 px-4">
+        
+        <!-- Lightbox Header -->
+        <div class="w-full max-w-5xl flex justify-between items-center text-cream-100 border-b border-stone-800 pb-4">
+            <div>
+                <span class="text-bronze-500 text-[10px] uppercase font-extrabold tracking-widest block">BHOLE STEEL SITE PORTFOLIO</span>
+                <h4 id="lightbox-image-title" class="font-serif text-base sm:text-lg font-bold">Image Preview</h4>
+            </div>
+            <!-- Small floating top close button -->
+            <button onclick="closeLightbox()" class="p-2 bg-stone-900 hover:bg-stone-800 rounded-full text-cream-100 hover:text-bronze-500 transition-all border border-stone-800" title="Close Modal">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Middle Image Container with Navigation Side Arrows -->
+        <div class="relative w-full max-w-4xl h-[45vh] sm:h-[60vh] flex justify-center items-center my-4">
+            <!-- Previous Button on Left -->
+            <button onclick="navigateLightbox(-1)" class="absolute left-0 sm:-left-12 z-10 p-3 rounded-full bg-stone-900/80 hover:bg-bronze-800/90 text-cream-100 transition-all border border-stone-800 hover:scale-105 shadow-xl flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+
+            <!-- Target Image Display -->
+            <img id="lightbox-img" src="" alt="Enlarged Site Photo" class="max-w-full max-h-full object-contain rounded-2xl shadow-2xl border border-stone-800">
+
+            <!-- Next Button on Right -->
+            <button onclick="navigateLightbox(1)" class="absolute right-0 sm:-right-12 z-10 p-3 rounded-full bg-stone-900/80 hover:bg-bronze-800/90 text-cream-100 transition-all border border-stone-800 hover:scale-105 shadow-xl flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Bottom Action Controls: Close (Band Karein) and Navigators Centered -->
+        <div class="w-full max-w-md flex flex-col items-center gap-4 text-center">
+            <!-- Big Centered Close Buttons to make it extremely friendly for everyone -->
+            <div class="flex justify-center items-center space-x-3 w-full">
+                <button onclick="navigateLightbox(-1)" class="px-4 py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-cream-100 text-xs font-bold border border-stone-800 transition-all uppercase flex items-center gap-1 sm:hidden">
+                    <span>← PREV</span>
+                </button>
+                
+                <button onclick="closeLightbox()" class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-bronze-600 to-bronze-800 text-cream-50 text-xs font-extrabold uppercase tracking-widest hover:brightness-110 active:scale-95 shadow-lg border border-bronze-500 transition-all flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4 text-cream-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>CLOSE / बंद करें</span>
+                </button>
+
+                <button onclick="navigateLightbox(1)" class="px-4 py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-cream-100 text-xs font-bold border border-stone-800 transition-all uppercase flex items-center gap-1 sm:hidden">
+                    <span>NEXT →</span>
+                </button>
+            </div>
+            
+            <p class="text-[10px] sm:text-xs text-stone-500">
+                You can swipe left/right on your screen, click side arrow keys, or hit ESC to exit. <br>
+                (तस्वीर बंद करने के लिए **CLOSE** बटन दबाएं)
+            </p>
+        </div>
+    </div>
+
+    <!-- Client Reviews Section -->
+    <section id="reviews" class="bg-cream-100 border-t border-b border-cream-200 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs uppercase font-extrabold text-bronze-600 tracking-[0.2em]">Our Satisfied Customer Testimonials</span>
+                <h2 class="font-serif text-3xl font-bold mt-2">हमारे संतुष्ट ग्राहकों के विचार</h2>
+                <p class="text-stone-500 text-xs sm:text-sm mt-2">Hear directly from local Agra industrial factories and premium residents who trust us.</p>
+            </div>
+
+            <!-- Grid of 3 Reviews -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-cream-50 p-6 rounded-2xl border border-cream-300 shadow-premium">
+                    <div class="flex items-center space-x-1.5 text-amber-500 mb-4">
+                        <!-- 5 Star Icons -->
+                        <span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span>
+                    </div>
+                    <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+                        "Bhole Steel fabricated a massive double-span tin shed for my shoe factory unit in Nunihai. The alignment is absolute perfection and there hasn't been a single drop of water leakage even in the heaviest Agra rains. pure Tata material used!"
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-cream-200 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-bronze-100 text-bronze-800 font-bold flex items-center justify-center text-xs">
+                            KG
+                        </div>
+                        <div>
+                            <h5 class="text-xs sm:text-sm font-bold text-stone-900">Kartikey Gupta</h5>
+                            <p class="text-[10px] text-stone-500">Shoe Factory Owner, Nunihai Industrial Area</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-cream-50 p-6 rounded-2xl border border-cream-300 shadow-premium">
+                    <div class="flex items-center space-x-1.5 text-amber-500 mb-4">
+                        <span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span>
+                    </div>
+                    <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+                        "I wanted a highly custom ornamental main entrance gate and security window grills for my Dayalbagh home. They crafted it beautifully matching my layout rendering. Sunder bhi hai aur bohot zyada mazboot bhi! Highly recommended."
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-cream-200 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-bronze-100 text-bronze-800 font-bold flex items-center justify-center text-xs">
+                            YV
+                        </div>
+                        <div>
+                            <h5 class="text-xs sm:text-sm font-bold text-stone-900">Yashvardhan Singh</h5>
+                            <p class="text-[10px] text-stone-500">Bungalow Owner, Dayalbagh, Agra</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-cream-50 p-6 rounded-2xl border border-cream-300 shadow-premium">
+                    <div class="flex items-center space-x-1.5 text-amber-500 mb-4">
+                        <span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span><span class="text-sm">★</span>
+                    </div>
+                    <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+                        "These guys are very cooperative. Unhone hamari parking terrace ke liye circular dome pattern shed banaya hai. Site par aakar exact measurement liya aur unka rates market se bohot sahi hai. Safai se welding ka kaam karte hain."
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-cream-200 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-bronze-100 text-bronze-800 font-bold flex items-center justify-center text-xs">
+                            MS
+                        </div>
+                        <div>
+                            <h5 class="text-xs sm:text-sm font-bold text-stone-900">Mahendra Sharma</h5>
+                            <p class="text-[10px] text-stone-500">Property Manager, Sanjay Place, Agra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Address Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid lg:grid-cols-12 gap-12 items-stretch">
+            
+            <!-- Contact Left: Details & Map Link -->
+            <div class="lg:col-span-5 space-y-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <span class="text-xs uppercase font-extrabold text-bronze-600 tracking-[0.2em] block">Visit Our Workshop</span>
+                    <h2 class="font-serif text-3xl font-extrabold text-stone-900">हमसे संपर्क करें (Find Us)</h2>
+                    <p class="text-stone-600 text-xs sm:text-sm leading-relaxed">
+                        Our fabrication yard is located in Agra's highly trusted industrial belt. You can directly walk into our workshop to inspect steel raw materials or discuss layout designs face to face with our master fabricators.
+                    </p>
+                </div>
+
+                <div class="space-y-4 my-6">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-bronze-100 text-bronze-800 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs sm:text-sm text-stone-900">Company Workshop Address:</h4>
+                            <p class="text-[11px] sm:text-xs text-stone-600 mt-1 font-medium">
+                                Bhole Steel Welding & Fabricating,<br>
+                                Prakash Nagar, Nunihai, <br>
+                                Agra, Uttar Pradesh - 282006
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-bronze-100 text-bronze-800 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs sm:text-sm text-stone-900">Direct Contact Numbers:</h4>
+                            <p class="text-[11px] sm:text-xs text-stone-600 mt-1 font-bold">
+                                Mobile: <a href="tel:+919457201485" class="text-bronze-700 underline hover:text-bronze-900">+91 9457201485</a> <br>
+                                Alternative: <a href="tel:+918171957710" class="text-bronze-700 underline hover:text-bronze-900">+91 8171957710</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-bronze-100 text-bronze-800 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xs sm:text-sm text-stone-900">Working Hours (कार्य समय):</h4>
+                            <p class="text-[11px] sm:text-xs text-stone-600 mt-1">
+                                Monday to Saturday: 09:00 AM to 08:30 PM <br>
+                                Sunday: Closed (रविवार विश्राम)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Map Placeholder -->
+                <div class="bg-cream-200 border border-cream-300 rounded-2xl overflow-hidden h-44 shadow-inner relative flex items-center justify-center p-4 text-center">
+                    <div class="absolute inset-0 opacity-15 pointer-events-none">
+                        <div class="w-full h-full bg-[radial-gradient(#A3743F_1.5px,transparent_1.5px)] [background-size:12px_12px]"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <h4 class="font-bold text-xs sm:text-sm text-stone-900">📍 Prakash Nagar, Nunihai Location</h4>
+                        <p class="text-[10px] text-stone-500 mt-1">Directly behind the Nunihai Main Industrial Post Office Road.</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=27.196237268473695, 78.05063504144518" target="_blank" class="mt-3 inline-block bg-bronze-800 hover:bg-bronze-700 text-cream-50 text-[10px] font-bold uppercase tracking-wider px-4 py-2 rounded-lg transition-all shadow-md">
+                            Google Map पर खोलें
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Right: Inquiry Form -->
+            <div class="lg:col-span-7 bg-cream-100 border border-cream-300 p-6 sm:p-8 rounded-3xl shadow-premium flex flex-col justify-between">
+                <div>
+                    <h3 class="font-serif text-xl sm:text-2xl font-extrabold text-stone-900">Inquire Now / पूछताछ करें</h3>
+                    <p class="text-stone-500 text-[11px] sm:text-xs mt-1">Fill out the quick questionnaire below, and our fabrication coordinator will call you back within 2 hours.</p>
+                    
+                    <form onsubmit="handleInquirySubmit(event)" class="mt-6 space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[11px] uppercase tracking-wider font-extrabold text-stone-700 mb-1">Your Full Name (आपका नाम) *</label>
+                                <input type="text" required placeholder="e.g., Rajesh Kumar" class="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-3 text-xs focus:ring-1 focus:ring-bronze-500 outline-none transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] uppercase tracking-wider font-extrabold text-stone-700 mb-1">Mobile Phone (फ़ोन नंबर) *</label>
+                                <input type="tel" required placeholder="e.g., 9876543210" class="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-3 text-xs focus:ring-1 focus:ring-bronze-500 outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[11px] uppercase tracking-wider font-extrabold text-stone-700 mb-1">Fabrication Requirement Category *</label>
+                            <select required class="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-3 text-xs focus:ring-1 focus:ring-bronze-500 outline-none transition-all text-stone-800">
+                                <option value="">Select Category (काम का प्रकार चुनें)</option>
+                                <option value="tin-shed">Tin Shed / Iron Shed Roofing (टीन शेड)</option>
+                                <option value="dome">Steel Dome Structures (गुंबद / Dom)</option>
+                                <option value="gate-grill">Entrance Gate or Window Grills (गेट और ग्रिल)</option>
+                                <option value="cnc-sheet">CNC Laser Cut Designer Sheets (जली जस्ता)</option>
+                                <option value="heavy-structural">Heavy Factory Steel Trusses (हैवी ढांचा)</option>
+                                <option value="other">Other Welding & Repair Works (अन्य वेल्डिंग)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-[11px] uppercase tracking-wider font-extrabold text-stone-700 mb-1">Describe Your Measurement or Details (विवरण)</label>
+                            <textarea rows="4" placeholder="Mention size in feet, type of sheets wanted, or details of design..." class="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-3 text-xs focus:ring-1 focus:ring-bronze-500 outline-none transition-all"></textarea>
+                        </div>
+
+                        <div class="flex items-center space-x-2 bg-amber-50 p-3 rounded-xl border border-bronze-300/40">
+                            <input type="checkbox" required id="agree" class="w-4 h-4 accent-bronze-800 cursor-pointer">
+                            <label for="agree" class="text-[10px] text-stone-600 cursor-pointer select-none">
+                                I confirm the details are accurate. I request a free call back.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-bronze-800 hover:bg-bronze-900 text-cream-50 font-bold text-xs uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                            <svg class="w-4 h-4 text-bronze-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                            <span>SUBMIT REQUEST / पूछताछ भेजें</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div id="form-success-box" class="hidden mt-4 p-4 bg-emerald-50 border border-emerald-300 rounded-2xl text-center">
+                    <p class="text-xs font-bold text-emerald-800">✓ Request Received Successfully!</p>
+                    <p class="text-[11px] text-emerald-600 mt-1">Our fabricator will contact you shortly on your provided phone number.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Brand Footer -->
+    <footer class="bg-stone-950 text-cream-100 border-t border-stone-800 pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+            
+            <!-- Left Side Logo & Slogan -->
+            <div class="md:col-span-5 space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-bronze-500 to-bronze-800 rounded-lg flex items-center justify-center">
+                        <span class="font-serif font-bold text-base text-cream-100">BS</span>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-lg font-bold text-cream-100">Bhole Steel</h4>
+                        <p class="text-[9px] uppercase tracking-wider text-stone-400">Welding & Fabricating</p>
+                    </div>
+                </div>
+                <p class="text-stone-400 text-xs leading-relaxed max-w-sm font-serif italic">
+                    "Carefully crafted from high quality metal to offer both beauty and strength."
+                </p>
+                <div class="pt-2 text-stone-500 text-[10px]">
+                    <p>Government MSME Certified • Nunihai Industrial Yard Agra-6</p>
+                    
+                </div>
+            </div>
+
+            <!-- Center Quick Links (MODIFIED SECTION) -->
+            <div class="md:col-span-3 space-y-4">
+                <h5 class="text-xs uppercase font-extrabold tracking-widest text-bronze-500">Quick Links (त्वरित लिंक)</h5>
+                <ul class="space-y-2 text-xs text-stone-400 flex flex-col items-start">
+                    <!-- Smooth scrolling anchor links combined with tab switching -->
+                    <li><a href="#services-tabs-container" onclick="switchPage('main-fabrication')" class="hover:text-bronze-400 transition-colors flex items-center gap-1.5"><span class="text-bronze-600">▸</span> Tin Sheds & Domes</a></li>
+                    <li><a href="#services-tabs-container" onclick="switchPage('structural-page')" class="hover:text-bronze-400 transition-colors flex items-center gap-1.5"><span class="text-bronze-600">▸</span> Heavy Structures</a></li>
+                    <li><a href="#trust" class="hover:text-bronze-400 transition-colors flex items-center gap-1.5"><span class="text-bronze-600">▸</span> Trust & Standards</a></li>
+                    <li><a href="#portfolio" class="hover:text-bronze-400 transition-colors flex items-center gap-1.5"><span class="text-bronze-600">▸</span> Work Gallery (तस्वीरें)</a></li>
+                    <li><a href="#reviews" class="hover:text-bronze-400 transition-colors flex items-center gap-1.5"><span class="text-bronze-600">▸</span> Client Reviews</a></li>
+                    <li><a href="#contact" class="hover:text-bronze-400 transition-colors flex items-center gap-1.5"><span class="text-bronze-600">▸</span> Contact & Map</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Fast Info -->
+            <div class="md:col-span-4 space-y-3 text-xs text-stone-400">
+                <h5 class="text-xs uppercase font-extrabold tracking-widest text-bronze-500">Agra Nunihai Location</h5>
+                <p class="leading-relaxed">
+                    Near Mother Ladli School, Prakash Nagar,<br>
+                    Nunihai, Agra, Uttar Pradesh - 282006
+                </p>
+                <p class="pt-2">
+                    <span class="font-bold text-cream-100">Talk to Owner:</span> <br>
+                    Phone: <a href="tel:+919457201485" class="hover:text-bronze-400 font-bold underline">+91 9457201485</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-stone-900 pt-6 text-center text-[10px] text-stone-500 flex flex-col sm:flex-row justify-between gap-4">
+            <p>© 2026 Bhole Steel Welding and Fabricating. All Rights Reserved.</p>
+            <p>Designed with absolute structural integrity & MSME trust standards.</p>
+        </div>
+    </footer>
+
+    <!-- CORE JAVASCRIPT LOGIC -->
+    <script>
+        // Tab Page Views Switch System
+        function switchPage(pageId) {
+            // Get all page-view elements
+            const views = document.querySelectorAll('.page-view');
+            views.forEach(view => {
+                view.classList.add('hidden');
+            });
+
+            // Show active element
+            const activePage = document.getElementById(pageId);
+            if (activePage) {
+                activePage.classList.remove('hidden');
+                activePage.classList.add('block');
+            }
+
+            // Update Tab Button styles
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            tabButtons.forEach(btn => {
+                btn.className = "tab-btn px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 text-stone-700 hover:bg-cream-300/50 flex items-center space-x-2";
+            });
+
+            const activeBtn = document.getElementById('btn-' + pageId);
+            if (activeBtn) {
+                activeBtn.className = "tab-btn px-5 py-3 rounded-xl font-bold text-xs uppercase tracking-wider transition-all duration-300 bg-bronze-800 text-cream-50 shadow-md flex items-center space-x-2";
+            }
+
+            // Update Nav Link styles for desktop layout
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.className = "nav-link py-2 hover:text-bronze-600 transition-all border-b-2 border-transparent hover:border-bronze-300";
+            });
+
+            const activeLink = document.getElementById('link-' + pageId);
+            if (activeLink) {
+                activeLink.className = "nav-link py-2 text-bronze-600 border-b-2 border-bronze-500 font-bold";
+            }
+
+            // Also dynamically alter the hero showcase element slightly depending on the selected page
+            updateHeroShowcase(pageId);
+        }
+
+        // Update the Floating Hero Showcase content based on chosen tabs
+        function updateHeroShowcase(pageId) {
+            const heroImg = document.getElementById('hero-dynamic-image');
+            const heroBadge = document.getElementById('hero-dynamic-badge');
+            const heroTitle = document.getElementById('hero-dynamic-title');
+            const heroDesc = document.getElementById('hero-dynamic-desc');
+
+            if (!heroImg || !heroBadge || !heroTitle || !heroDesc) return;
+
+            if (pageId === 'main-fabrication') {
+                heroImg.src = "/z RadhaSwami satsang Tin shade.jpeg";
+                heroBadge.textContent = "Agra Tin Shed Specialists";
+                heroTitle.textContent = "Heavy Protection Iron Sheds";
+                heroDesc.textContent = "Leak-proof slope designs built using heavy Tata Steel pipes and Jindal sheets.";
+            } else if (pageId === 'structural-page') {
+                heroImg.src = "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=60&w=800";
+                heroBadge.textContent = "Heavy Metal Framing";
+                heroTitle.textContent = "I-Beam Truss Structures";
+                heroDesc.textContent = "High-load carrying frameworks engineered precisely for warehouses & shoe factories.";
+            } else if (pageId === 'architectural-page') {
+                heroImg.src = "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=60&w=800";
+                heroBadge.textContent = "Royal Security Gates";
+                heroTitle.textContent = "Beautiful Main Iron Gates";
+                heroDesc.textContent = "Custom entrance security structures crafted neatly with heavy protective bars.";
+            } else if (pageId === 'laser-page') {
+                heroImg.src = "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=60&w=800";
+                heroBadge.textContent = "Modern High-Tech CNC";
+                heroTitle.textContent = "CNC Laser Jali Cutting Sheets";
+                heroDesc.textContent = "Stunning geometric cut facade sheets finished in luxury corrosion-proof brass coats.";
+            }
+        }
+
+        // Toggle Mobile Menu open/close state
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const btn = document.getElementById('mobile-menu-btn');
+            if (menu) {
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    btn.innerHTML = `
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    `;
+                } else {
+                    menu.classList.add('hidden');
+                    btn.innerHTML = `
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h12M4 18h16"></path>
+                        </svg>
+                    `;
+                }
+            }
+        }
+
+        // Dynamic Form submission handler without breaking the beautiful interface
+        function handleInquirySubmit(event) {
+            event.preventDefault();
+            const successBox = document.getElementById('form-success-box');
+            if (successBox) {
+                successBox.classList.remove('hidden');
+                event.target.reset();
+                setTimeout(() => {
+                    successBox.classList.add('hidden');
+                }, 7000);
+            }
+        }
+
+        // Custom Lightbox Gallery Database (Indexes matched with HTML ids)
+        let currentImgIndex = 0;
+        const galleryData = [
+            {
+                src: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=60&w=800",
+                title: "Heavy Industrial Tin Shed - Nunihai Industrial Zone"
+            },
+            {
+                src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=60&w=800",
+                title: "Architectural Circular Dom - Dayalbagh Residential"
+            },
+            {
+                src: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=60&w=800",
+                title: "Royal Laser Jali Boundary Gate - Sikandra Bungalow"
+            },
+            {
+                src: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=60&w=800",
+                title: "Heavy Factory Platform Truss - Shastripuram Warehouse"
+            },
+            {
+                src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=60&w=800",
+                title: "Reinforced Window Security Grills - Kamla Nagar Residential"
+            },
+            {
+                src: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=60&w=800",
+                title: "Curved Cantilever Parking Shed - Sanjay Place Complex"
+            }
+        ];
+
+        // Open custom premium lightbox modal at specific image index
+        function openLightbox(index) {
+            currentImgIndex = index;
+            const modal = document.getElementById('lightbox-modal');
+            const targetImg = document.getElementById('lightbox-img');
+            const targetTitle = document.getElementById('lightbox-image-title');
+
+            if (modal && targetImg && targetTitle) {
+                targetImg.src = galleryData[currentImgIndex].src;
+                targetTitle.textContent = galleryData[currentImgIndex].title;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.classList.add('overflow-y-hidden'); // Prevent background scrolling
+            }
+        }
+
+        // Close Lightbox Modal cleanly
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.classList.remove('overflow-y-hidden'); // Re-enable scroll
+            }
+        }
+
+        // Navigate images inside lightbox smoothly (1 or -1)
+        function navigateLightbox(direction) {
+            currentImgIndex += direction;
+            if (currentImgIndex >= galleryData.length) {
+                currentImgIndex = 0; // Wrap around to first image
+            } else if (currentImgIndex < 0) {
+                currentImgIndex = galleryData.length - 1; // Wrap to last image
+            }
+
+            const targetImg = document.getElementById('lightbox-img');
+            const targetTitle = document.getElementById('lightbox-image-title');
+            if (targetImg && targetTitle) {
+                // Flash opacity transition for premium user feedback
+                targetImg.style.opacity = 0;
+                setTimeout(() => {
+                    targetImg.src = galleryData[currentImgIndex].src;
+                    targetTitle.textContent = galleryData[currentImgIndex].title;
+                    targetImg.style.opacity = 1;
+                }, 100);
+            }
+        }
+
+        // Listen for keyboard controls inside Lightbox
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('lightbox-modal');
+            if (modal && !modal.classList.contains('hidden')) {
+                if (event.key === 'Escape' || event.key === 'Esc') {
+                    closeLightbox();
+                } else if (event.key === 'ArrowLeft') {
+                    navigateLightbox(-1);
+                } else if (event.key === 'ArrowRight') {
+                    navigateLightbox(1);
+                }
+            }
+        });
+
+        // Initialize state variables on page load
+        window.onload = function() {
+            // Set initial state to Core fabrication tab view
+            switchPage('main-fabrication');
+        }
+    </script>
+</body>
+</html>
